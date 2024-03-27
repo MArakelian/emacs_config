@@ -85,6 +85,13 @@
 (use-package markdown-mode
   :ensure t)
 
+;; Engraved Faces
+(use-package engrave-faces
+  :ensure t)
+
+(setq org-latex-src-block-backend 'engraved)
+(setq org-latex-engraved-theme 'doom-one-light)  ;; Optional
+
 ;;---CITATIONS------------------------------------->
 
 ;;Citations for Org Mode
